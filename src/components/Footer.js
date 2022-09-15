@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Footer = () => {
+function Footer(props) {
+    console.log(props.dat)
     return (
-        <div> Footer</div>
+        <div> Footer {props.dat}</div>
     )
 }
 

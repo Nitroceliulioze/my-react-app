@@ -1,34 +1,23 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import Box from "../helpingComponents/Box";
 import data from "../util/data";
 
 const Home = () => {
-  console.log(data);
-  const head = "diana"
+ 
+  const a = "jai"
   return (
     <>
       {/* header */}
-      <Header data={head}/>
+      <Header/>
       <h1>HOME</h1>
-      {/* Cards */}
       {data.map((item) => {
-        return (
-          <div
-            style={{
-              width: "200px",
-              height: "200px",
-              border: "1px solid black",
-            }}
-          >
-            <h1>{item.id}</h1>
-            <p>{item.title}</p>
-          </div>
-        );
-      })}
-
-      <Footer />
+        return <Box  value={item}/>;
+      })};
+      
       {/* footer */}
+      <Footer dat={a}/>      
     </>
   );
 };
