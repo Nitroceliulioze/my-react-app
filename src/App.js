@@ -16,6 +16,7 @@ const App = () => {
 
   return (
     <> 
+    <div className='containerWrapper'>
     <div className="container">  
     {data.length !== 0
       ? data.map(items => {
@@ -24,6 +25,7 @@ const App = () => {
         )
       })     
       : "Loading..."}
+    </div>
     </div>
     </> 
   );
